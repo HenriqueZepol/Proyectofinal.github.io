@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Point - Accesorios para Motos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            background-image: url('https://resources.motogp.pulselive.com/photo-resources/2024/06/12/664f34cf-f133-4847-9ed9-e8d8530f0002/_DS_8066.JPG?width=1440&height=810');
+            background-size: cover;
+            background-position: center;
+        }
+        .header-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #e57373;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            margin: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar-left {
+            width: 200px;
+            background-color: #333;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        .sidebar-left a, .sidebar-left .dropdown-content a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .sidebar-left a:hover, .sidebar-left .dropdown-content a:hover {
+            background-color: #e57373;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar-right {
+            width: 200px;
+            background-color: #444;
+            padding: 20px;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .main-content h2 {
+            color: #e57373;
+        }
+        .recuadros {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .recuadro {
+            background-color: #555;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .recuadro img {
+            max-width: 100%;
+            height: auto;
+        }
+        .recuadro:hover {
+            transform: scale(1.05);
+        }
+        .btn-comprar {
+            background-color: #ff3333;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-comprar:hover {
+            background-color: #cc0000;
+            transform: scale(1.1);
+        }
+        #cart {
+            background-color: #222;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        #cart-items li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Circuit Point</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar-left">
+            <a href="index.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="otros-productos.html">Otros Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <div class="dropdown">
+                <a href="#">Categorías</a>
+                <div class="dropdown-content">
+                    <a href="C:\proyecto/categoria1.html">Categoría 1</a>
+                    <a href="C:\proyecto/categoria2.html">Categoría 2</a>
+                    <a href="C:\proyecto/categoria3.html">Categoría 3</a>
+                    <a href="C:\proyecto/categoria4.html">Categoría 4</a>
+                    <a href="C:\proyecto/categoria5.html">Categoría 5</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Bienvenido a Circuit Point</h2>
+            <p>Este es el lugar ideal para encontrar los mejores accesorios para tu moto. Explora nuestros productos y aprovecha nuestras ofertas exclusivas.</p>
+            <div class="recuadros">
+                <div class="recuadro">
+                    <img src="https://www.bikerscrown.sk/files/eshop/products/supertech10team-3.jpg?max-width=1200&max-height=1200" alt="Botas Supertech 10">
+                    <a href="producto1.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_868359-MLM74825285994_032024-O.webp" alt="Mono GP Force Lurv">
+                    <a href="producto2.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://moto-rad.com/cdn/shop/collections/Botas_Deportivas_Sidi_2.webp?v=1689868028" alt="Botas Deportivas Sidi">
+                    <a href="producto3.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://garrigamotoshop.com/modules/ph_simpleblog/covers/17.jpg" alt="Accesorio Moto 1">
+                    <a href="producto4.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://dainese-cdn.thron.com/delivery/public/image/dainese/5593071b-3def-4f26-8a52-e0d68eae80c7/otchez/std/600x600/pista-gp-rr-square?format=auto&quality=60" alt="Casco Pista GP RR">
+                    <a href="producto5.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://www.alpinestars.com/cdn/shop/collections/GP_Force_Lurv_2pc_2.jpg?v=1713908548&width=1200" alt="Mono GP Force Lurv 2pc">
+                    <a href="producto6.html" class="btn-comprar">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <p>5% de Descuento al comprar en línea.</p>
+            <!-- Carrito -->
+            <div id="cart">
+                <h3>Carrito (<span id="cart-count">0</span>)</h3>
+                <ul id="cart-items"></ul>
+                <button id="checkout" style="display:none;">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let cart = [];
+        
+        // Función para agregar al carrito
+        function addToCart(productName) {
+            cart.push(productName);
+            updateCart();
+        }
+
+        // Actualizar la interfaz del carrito
+        function updateCart() {
+            document.getElementById('cart-count').innerText = cart.length;
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+
+            cart.forEach((item) => {
+                const li = document.createElement('li');
+                li.innerText = item;
+                cartItems.appendChild(li);
+            });
+
+            // Mostrar botón de checkout si hay productos
+            const checkoutButton = document.getElementById('checkout');
+            checkoutButton.style.display = cart.length > 0 ? 'block' : 'none';
+        }
+
+        // Asigna el evento de agregar al carrito a los botones de compra
+        document.querySelectorAll('.btn-comprar').forEach(button => {
+            button.addEventListener('click', function() {
+                const productName = this.parentElement.querySelector('img').alt;
+                addToCart(productName);
+            });
+        });
+    </script>
+</body>
+</html>

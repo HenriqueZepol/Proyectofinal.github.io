@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios - Circuit Point</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        header {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            background-image: url('https://resources.motogp.pulselive.com/photo-resources/2024/06/12/664f34cf-f133-4847-9ed9-e8d8530f0002/_DS_8066.JPG?width=1440&height=810');
+            background-size: cover;
+            background-position: center;
+        }
+        .header-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #e57373;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            margin: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar-left {
+            width: 200px;
+            background-color: #333;
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        .sidebar-left a, .sidebar-left .dropdown-content a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .sidebar-left a:hover, .sidebar-left .dropdown-content a:hover {
+            background-color: #e57373;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar-right {
+            width: 200px;
+            background-color: #444;
+            padding: 20px;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .main-content h2 {
+            color: #e57373;
+        }
+        .recuadros {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 15px;
+        }
+        .recuadro {
+            background-color: #555;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .recuadro img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        .btn-comprar {
+            background-color: #ff3333;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-comprar:hover {
+            background-color: #cc0000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Circuit Point</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar-left">
+            <a href="index.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="otros-productos.html">Otros Productos</a>
+            <a href="contacto.html">Contacto</a>
+            <div class="dropdown">
+                <a href="#">Categorías</a>
+                <div class="dropdown-content">
+                    <a href="cascos.html">Cascos</a>
+                    <a href="monos.html">Monos</a>
+                    <a href="guantes.html">Guantes</a>
+                    <a href="botas.html">Botas</a>
+                    <a href="accesorios.html">Accesorios</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Accesorios</h2>
+            <div class="recuadros">
+                <div class="recuadro">
+                    <img src="https://example.com/accesorio1.jpg" alt="Accesorio 1">
+                    <a href="producto-accesorio1.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://example.com/accesorio2.jpg" alt="Accesorio 2">
+                    <a href="producto-accesorio2.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://example.com/accesorio3.jpg" alt="Accesorio 3">
+                    <a href="producto-accesorio3.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://example.com/accesorio4.jpg" alt="Accesorio 4">
+                    <a href="producto-accesorio4.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://example.com/accesorio5.jpg" alt="Accesorio 5">
+                    <a href="producto-accesorio5.html" class="btn-comprar">Comprar</a>
+                </div>
+                <div class="recuadro">
+                    <img src="https://example.com/accesorio6.jpg" alt="Accesorio 6">
+                    <a href="producto-accesorio6.html" class="btn-comprar">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <p>Aquí va un breve texto sobre promociones, noticias o cualquier otra información relevante.</p>
+        </div>
+    </div>
+</body>
+</html>
